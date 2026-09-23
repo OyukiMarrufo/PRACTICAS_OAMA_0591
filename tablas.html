@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- Declara el uso de HTML5 -->
+<html lang="en"> <!-- Define el idioma principal (inglés) -->
+
+<head> <!-- Contiene metadatos y configuración del sitio -->
+    <meta charset="UTF-8"> <!-- Permite caracteres especiales y acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la página a pantallas móviles -->
+    <title>Tablas en HTML</title> <!-- Título en la pestaña del navegador -->
+</head> <!-- Fin de metadatos -->
+
+<body> <!-- Contenido visible de la página -->
+    <h1>Tipos de tablas</h1> <!-- Título principal de la página -->
+    <p>El objetivo fundamental de las tablas en HTML sera <!-- Párrafo explicativo -->
+        mostrar una serie de datos en forma ordenada, <!-- Texto del párrafo -->
+        organizado en filas y columnas <!-- Texto del párrafo -->
+    </p> <!-- Fin del párrafo -->
+    <p>Para la creacion de una tabla intervienen diferentes elementos:</p> <!-- Párrafo introductorio -->
+    <dl> <!-- Abre la lista de definiciones sobre etiquetas de tabla -->
+        <dt>Table</dt> <!-- Término: etiqueta principal de la tabla -->
+        <dd> <!-- Definición de <table> -->
+            Es la marca de comienzo de la tabla. Este elemento requiere <!-- Texto explicativo -->
+            la marca de cierre. <!-- Texto explicativo -->
+        </dd> <!-- Fin de definición -->
+        <dt>Tr</dt> <!-- Término: fila de la tabla -->
+        <dd> <!-- Definición de <tr> -->
+            Es la marca de comienzo de una fila. Esta marca debe estar <!-- Texto explicativo -->
+            dentro del elemento table <!-- Texto explicativo -->
+        </dd> <!-- Fin de definición -->
+        <dt>Td</dt> <!-- Término: celda de datos -->
+        <dd> <!-- Definición de <td> -->
+            Es la marca de comeinzo de una celda. Esta marca debe estar <!-- Texto explicativo -->
+            dentro del elemento tr <!-- Texto explicativo -->
+        </dd> <!-- Fin de definición -->
+    </dl> <!-- Fin de la lista de definiciones -->
+    <h2>Ejemplo</h2> <!-- Subtítulo del primer ejemplo -->
+    <table border="1"> <!-- Abre una tabla con un borde visible de 1 píxel -->
+        <tr> <!-- Abre la primera fila -->
+            <td>Ciudad de Mexico</td> <!-- Celda de dato (columna 1) -->
+            <td>9.2 millones</td> <!-- Celda de dato (columna 2) -->
+        </tr> <!-- Cierra la primera fila -->
+        <tr> <!-- Abre la segunda fila -->
+            <td>Guadalajara</td> <!-- Celda de dato (columna 1) -->
+            <td>4.1 millones</td> <!-- Celda de dato (columna 2) -->
+        </tr> <!-- Cierra la segunda fila -->
+        <tr> <!-- Abre la tercera fila -->
+            <td>Monterrey</td> <!-- Celda de dato (columna 1) -->
+            <td>3.9 millones</td> <!-- Celda de dato (columna 2) -->
+        </tr> <!-- Cierra la tercera fila -->
+    </table> <!-- Cierra la primera tabla -->
+    <h2>Tabla con encabezado</h2> <!-- Subtítulo de tabla con encabezados -->
+    <p>La caracteristicas de esta tabla es que se le agrega a las celdas <!-- Párrafo explicativo -->
+        el encabezado correspondiente, esto solo aplicaria a la primera <!-- Texto explicativo -->
+        fila de la tabla con la etiqueta <em>th</em>, las demas filas <!-- Uso de <em> para enfatizar "th" -->
+        usarian la etiqueta <em>td</em> con normalidad. <!-- Uso de <em> para enfatizar "td" -->
+    </p> <!-- Fin del párrafo -->
+    <table border="1"> <!-- Abre la segunda tabla con borde -->
+        <tr> <!-- Abre la fila del encabezado -->
+            <th>Ciudad</th> <!-- Celda de encabezado en negrita y centrada (columna 1) -->
+            <th>Cantidad de habitantes</th> <!-- Celda de encabezado (columna 2) -->
+        </tr> <!-- Cierra la fila del encabezado -->
+        <tr> <!-- Abre la fila de datos #1 -->
+            <td>Ciudad de Mexico</td> <!-- Dato de la columna 1 -->
+            <td>9.2 millones</td> <!-- Dato de la columna 2 -->
+        </tr> <!-- Cierra la fila #1 -->
+        <tr> <!-- Abre la fila de datos #2 -->
+            <td>Guadalajara</td> <!-- Dato de la columna 1 -->
+            <td>4.1 millones</td> <!-- Dato de la columna 2 -->
+        </tr> <!-- Cierra la fila #2 -->
+        <tr> <!-- Abre la fila de datos #3 -->
+            <td>Monterrey</td> <!-- Dato de la columna 1 -->
+            <td>3.9 millones</td> <!-- Dato de la columna 2 -->
+        </tr> <!-- Cierra la fila #3 -->
+    </table> <!-- Cierra la segunda tabla -->
+    <h2>Tabla con titulo</h2> <!-- Subtítulo de tabla con título/leyenda -->
+    <p>Para insertar un titulo a la tabla debemos incorporar el elemento caption <!-- Párrafo explicativo sobre <caption> -->
+        inmediatamente despues de abrir la etiqueta <em>table</em>. <!-- Explica la posición correcta de <caption> -->
+    </p> <!-- Fin del párrafo -->
+    <table border="1"> <!-- Abre la tercera tabla con borde -->
+        <caption>Poblacion de las ciudades mas concurridas de Mexico</caption> <!-- Título/leyenda descriptiva de la tabla -->
+        <tr> <!-- Abre la fila de encabezados -->
+            <th>Ciudad</th> <!-- Encabezado (columna 1) -->
+            <th>Cantidad de habitantes</th> <!-- Encabezado (columna 2) -->
+        </tr> <!-- Cierra la fila de encabezados -->
+        <tr> <!-- Abre fila de datos #1 -->
+            <td>Ciudad de Mexico</td> <!-- Dato columna 1 -->
+            <td>9.2 millones</td> <!-- Dato columna 2 -->
+        </tr> <!-- Cierra fila #1 -->
+        <tr> <!-- Abre fila de datos #2 -->
+            <td>Guadalajara</td> <!-- Dato columna 1 -->
+            <td>4.1 millones</td> <!-- Dato columna 2 -->
+        </tr> <!-- Cierra fila #2 -->
+        <tr> <!-- Abre fila de datos #3 -->
+            <td>Monterrey</td> <!-- Dato columna 1 -->
+            <td>3.9 millones</td> <!-- Dato columna 2 -->
+        </tr> <!-- Cierra fila #3 -->
+    </table> <!-- Cierra la tercera tabla -->
+</body> <!-- Fin del contenido visible -->
+
+</html> <!-- Fin del documento HTML -->
