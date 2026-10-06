@@ -1,0 +1,156 @@
+<!-- OYUKI ALEJANDRA MARRUFO ALVARADO -->
+<!-- 0591 -->
+<!-- 5°I -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:sans-serif}
+    a,button{text-decoration:none;color:#0056D2;font-size:14px;font-weight:600}
+    .flex,.navbar,.hero,.card,.courses-section,.course-column,.course-item{display:flex}
+    .navbar{align-items:center;gap:20px;padding:12px 24px;border-bottom:1px solid #e1e1e1}
+    .logo{font-size:26px;font-weight:800}
+    .btn-b{border:1px solid #0056D2;border-radius:4px;padding:8px 14px;background:0 0;cursor:pointer}
+    .search-bar{align-items:center;flex-grow:1;max-width:500px;border:1px solid #ccc;border-radius:20px;padding:4px 6px 4px 16px;justify-size:space-between;display:flex}
+    .search-bar input{border:none;outline:0;width:100%}
+    .search-btn{background:#0056D2;border:none;border-radius:50%;width:32px;height:32px;color:#fff;cursor:pointer;flex-shrink:0}
+    .hero{gap:20px;padding:24px;max-width:1200px;margin:0 auto}
+    .card{flex:1;border-radius:16px;padding:32px;flex-direction:column;justify-content:space-between;min-height:280px;background-size:cover}
+    .card-dark{background:#0c0c0d url('https://picsum.photos/id/1062/600/400') center/cover;color:#fff}
+    .card-light{background:#fef0db url('https://picsum.photos/id/1012/600/400') center/cover;color:#111}
+    .card h1{font-size:28px;line-height:1.2;margin-bottom:12px}
+    .btn-card{padding:10px 20px;border-radius:6px;border:none;display:inline-block}
+    .btn-white{background:#fff;color:#0056D2}
+    .btn-blue{background:#0056D2;color:#fff}
+    .btn-black{background:#000000;color:#fff}
+    .wrap{max-width:1200px;margin:0 auto 24px;padding:0 24px}
+    .wrap h2{font-size:22px;margin-bottom:16px}
+    .courses-section{gap:20px}
+    .course-column{flex:1;background:#ebf3ff;border-radius:12px;padding:16px;flex-direction:column;gap:12px}
+    .course-item{background:#fff;border-radius:10px;padding:10px;gap:12px;align-items:center;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+    .course-img{width:48px;height:48px;border-radius:8px;object-fit:cover;flex-shrink:0}
+    .form-box{background:#f8f9fa;border:1px solid #e1e1e1;border-radius:12px;padding:24px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:16px 0}
+    .fg{display:flex;flex-direction:column;gap:4px}
+    .full{grid-column:1/-1}
+    .fg label{font-size:12px;font-weight:700}
+    .fg input,.fg select,.fg textarea{padding:8px;border:1px solid #ccc;border-radius:6px;font-size:13px;outline:0}
+    .opts{display:flex;gap:12px;font-size:12px;margin-top:4px}
+    footer{background:#000;padding:24px;text-align:center;color:#fff;font-size:16px;margin-top:20px}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <a href="#" class="logo">coursera</a>
+    <button class="btn-b">Explorar ▾</button>
+    <a href="#" style="color:#555;font-weight:400">Títulos de grado</a>
+    <div class="search-bar">
+      <input type="text" placeholder="¿Qué deseas aprender?">
+      <button class="search-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+    <a href="#" style="margin-left:auto">Iniciar Sesión</a>
+    <button class="btn-b">Únete de forma gratuita</button>
+  </header>
+
+  <!-- Hero Banners -->
+  <main class="hero">
+    <div class="card card-dark">
+      <div><h1>Comience, cambie o<br>avance en su carrera</h1><p>Crezca con más de 10.000 cursos de las mejores organizaciones</p></div>
+      <a href="#" class="btn-card btn-white">Únase gratis &rarr;</a>
+    </div>
+    <div class="card card-light">
+      <div><p><b>Microsoft</b></p><h1>Navigate your career path<br>in tech with Microsoft</h1></div>
+      <a href="#" class="btn-card btn-blue">Enroll now &rarr;</a>
+    </div>
+  </main>
+
+  <!-- Cursos de moda -->
+  <section class="wrap">
+    <h2>Cursos de moda</h2>
+    <div class="courses-section">
+      <div class="course-column">
+        <b>Más populares &rarr;</b>
+        <div class="course-item"><img src="https://picsum.photos/id/180/100/100" class="course-img"><div><h4>Análisis de datos de Google</h4><p style="font-size:11px;color:#666">Certificado profesional · ★ 4.8</p></div></div>
+        <div class="course-item"><img src="https://picsum.photos/id/20/100/100" class="course-img"><div><h4>Fundamentos: Datos, datos, en todas partes</h4><p style="font-size:11px;color:#666">Curso · ★ 4.8</p></div></div>
+        <div class="course-item"><img src="https://picsum.photos/id/0/100/100" class="course-img"><div><h4>Python para todos</h4><p style="font-size:11px;color:#666">Especialización · ★ 4.8</p></div></div>
+      </div>
+      <div class="course-column">
+        <b>Destacado semanal &rarr;</b>
+        <div class="course-item"><img src="https://picsum.photos/id/96/100/100" class="course-img"><div><h4>Desarrollo de IA generativa con Hugging Face</h4><p style="font-size:11px;color:#666">Especialización</p></div></div>
+        <div class="course-item"><img src="https://picsum.photos/id/160/100/100" class="course-img"><div><h4>IBM Planificación y Análisis Financiero (FP&A)...</h4><p style="font-size:11px;color:#666">Certificado profesional · ★ 4.7</p></div></div>
+        <div class="course-item"><img src="https://picsum.photos/id/60/100/100" class="course-img"><div><h4>IA de Google</h4><p style="font-size:11px;color:#666">Certificado profesional · ★ 4.8</p></div></div>
+      </div>
+      <div class="course-column">
+        <b>Conocimientos de IA demandados &rarr;</b>
+        <div class="course-item"><img src="https://picsum.photos/id/119/100/100" class="course-img"><div><h4>IA generativa para el marketing de crecimiento</h4><p style="font-size:11px;color:#666">Especialización · ★ 4.7</p></div></div>
+        <div class="course-item"><img src="https://picsum.photos/id/201/100/100" class="course-img"><div><h4>Líder estratégico de IA generativa</h4><p style="font-size:11px;color:#666">Especialización · ★ 4.8</p></div></div>
+        <div class="course-item"><img src="https://picsum.photos/id/3/100/100" class="course-img"><div><h4>Creación de agentes de IA y flujos de trabajo...</h4><p style="font-size:11px;color:#666">Especialización · ★ 4.6</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario de Inscripción -->
+  <section class="wrap">
+    <div class="form-box">
+      <h2>Formulario de Inscripción</h2>
+      <form action="#" method="POST">
+        <div class="grid">
+          <div class="fg"><label>Nombre(s) *</label><input type="text" required></div>
+          <div class="fg"><label>Apellidos *</label><input type="text" required></div>
+          <div class="fg"><label>Correo *</label><input type="email" required></div>
+          <div class="fg"><label>Teléfono *</label><input type="tel" required></div>
+          <div class="fg"><label>Curso *</label>
+            <select required>
+              <option value="" disabled selected>-- Selecciona un curso --</option>
+              <optgroup label="Más populares">
+                <option value="analisis-datos-google">Análisis de datos de Google</option>
+                <option value="fundamentos-datos">Fundamentos: Datos, datos, en todas partes</option>
+                <option value="python-para-todos">Python para todos</option>
+              </optgroup>
+              <optgroup label="Destacado semanal">
+                <option value="desarrollo-ia-huggingface">Desarrollo de IA generativa con Hugging Face</option>
+                <option value="ibm-fpa">IBM Planificación y Análisis Financiero (FP&A)</option>
+                <option value="ia-de-google">IA de Google</option>
+              </optgroup>
+              <optgroup label="Conocimientos de IA demandados">
+                <option value="ia-marketing-crecimiento">IA generativa para el marketing de crecimiento</option>
+                <option value="lider-estrategico-ia">Líder estratégico de IA generativa</option>
+                <option value="agentes-ia-flujos">Creación de agentes de IA y flujos de trabajo</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="fg"><label>Nivel de Estudios *</label>
+            <select required>
+              <option value="">-- Seleccionar --</option>
+              <option>Preparatoria</option>
+              <option>Licenciatura</option>
+            </select>
+          </div>
+          <div class="fg"><label>Modalidad *</label>
+            <div class="opts"><label><input type="radio" name="m" checked> Online</label><label><input type="radio" name="m"> En vivo</label></div>
+          </div>
+          <div class="fg"><label>Pago *</label>
+            <div class="opts"><label><input type="radio" name="p" checked> Tarjeta</label><label><input type="radio" name="p"> Beca 100%</label></div>
+          </div>
+          <div class="fg full"><label>Motivo de ingreso</label><textarea rows="2"></textarea></div>
+          <div class="fg full"><div class="opts"><label><input type="checkbox" required> Acepto términos y condiciones.</label></div></div>
+        </div>
+        <button type="submit" class="btn-card btn-black" style="cursor:pointer">Inscribirme ahora &rarr;</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Nombre completo: Marrufo Alvarado Oyuki Alejandra | No.Control: a.24308051280591 | Semestre: 5to | Grupo: I | Especialidad: Programación</p>
+  </footer>
+
+</body>
+</html>
