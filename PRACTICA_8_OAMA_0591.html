@@ -1,0 +1,102 @@
+<!-- OYUKI ALEJANDRA MARRUFO ALVARADO -->
+<!-- 0591 -->
+<!-- 5°I -->
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; font-size: 13px; }
+    a, button { text-decoration: none; color: #0056D2; font-weight: 600; }
+    header { display: flex; align-items: center; gap: 15px; padding: 12px 24px; border-bottom: 1px solid #ddd; }
+    header button { border: 1px solid #0056D2; border-radius: 4px; padding: 6px 12px; background: none; cursor: pointer; }
+    .logo { font-size: 24px; font-weight: 800; }
+    .search-bar { display: flex; align-items: center; flex-grow: 1; max-width: 450px; border: 1px solid #ccc; border-radius: 20px; padding: 3px 4px 3px 12px; }
+    .search-bar input { border: none; outline: 0; width: 100%; }
+    .search-bar button { background: #0056D2; border: none; border-radius: 50%; width: 34px; height: 34px; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    main, section { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+    .hero, .courses { display: flex; gap: 15px; flex-wrap: wrap; }
+    .card { flex: 1; min-width: 250px; padding: 20px; border-radius: 8px; background: #0c0c0d; color: #fff; }
+    .card:last-child { background: #fef0db; color: #111; }
+    .card a { display: inline-block; margin-top: 10px; padding: 6px 12px; border-radius: 4px; background: #fff; color: #0056D2; }
+    .card:last-child a { background: #0056D2; color: #fff; }
+    .col { flex: 1; min-width: 240px; }
+    .item { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+    .item img { width: 40px; height: 40px; border-radius: 4px; object-fit: cover; }
+    form { border: 1px solid #ccc; border-radius: 8px; padding: 15px; display: flex; flex-direction: column; gap: 10px; }
+    label { font-weight: bold; display: flex; flex-direction: column; }
+    input, select, textarea { padding: 5px; border: 1px solid #ccc; border-radius: 4px; margin-top: 3px; }
+    .opts { display: flex; gap: 15px; font-weight: normal; margin-top: 3px; }
+    footer { background: #000; color: #fff; padding: 15px; text-align: center; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">coursera</a><button>Explorar ▾</button>
+    <a href="#" style="color:#555;font-weight:400">Títulos de grado</a>
+    <div class="search-bar"><input type="text" placeholder="¿Qué deseas aprender?"><button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button></div>
+    <a href="#" style="margin-left:auto">Iniciar Sesión</a><button>Únete de forma gratuita</button>
+  </header>
+  <main class="hero">
+    <div class="card"><h2>Comience o avance su carrera</h2><p>Más de 10,000 cursos</p><a href="#">Únase gratis &rarr;</a></div>
+    <div class="card"><p><b>Microsoft</b></p><h2>Navigate your tech path</h2><a href="#">Enroll now &rarr;</a></div>
+  </main>
+  <section>
+    <h2>Cursos de moda</h2>
+    <div class="courses">
+      <div class="col"><b>Más populares &rarr;</b>
+        <div class="item"><img src="https://picsum.photos/id/180/100/100"><div><h4>Análisis de datos de Google</h4><small>Certificado · ★ 4.8</small></div></div>
+        <div class="item"><img src="https://picsum.photos/id/20/100/100"><div><h4>Fundamentos: Datos, datos, en todas partes</h4><small>Curso · ★ 4.8</small></div></div>
+        <div class="item"><img src="https://picsum.photos/id/0/100/100"><div><h4>Python para todos</h4><small>Especialización · ★ 4.8</small></div></div>
+      </div>
+      <div class="col"><b>Destacado semanal &rarr;</b>
+        <div class="item"><img src="https://picsum.photos/id/96/100/100"><div><h4>Desarrollo de IA con Hugging Face</h4><small>Especialización</small></div></div>
+        <div class="item"><img src="https://picsum.photos/id/160/100/100"><div><h4>IBM Planificación y Análisis Financiero</h4><small>Certificado · ★ 4.7</small></div></div>
+        <div class="item"><img src="https://picsum.photos/id/60/100/100"><div><h4>IA de Google</h4><small>Certificado · ★ 4.8</small></div></div>
+      </div>
+      <div class="col"><b>Conocimientos de IA &rarr;</b>
+        <div class="item"><img src="https://picsum.photos/id/119/100/100"><div><h4>IA generativa para el marketing</h4><small>Especialización · ★ 4.7</small></div></div>
+        <div class="item"><img src="https://picsum.photos/id/201/100/100"><div><h4>Líder estratégico de IA generativa</h4><small>Especialización · ★ 4.8</small></div></div>
+        <div class="item"><img src="https://picsum.photos/id/3/100/100"><div><h4>Creación de agentes de IA</h4><small>Especialización · ★ 4.6</small></div></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <form action="#" method="POST">
+      <h2>Formulario de Inscripción</h2>
+      <label>Nombre(s) *<input type="text" required></label>
+      <label>Apellidos *<input type="text" required></label>
+      <label>Correo *<input type="email" required></label>
+      <label>Teléfono *<input type="tel" required></label>
+      <label>Curso *
+        <select required>
+          <option value="" disabled selected>-- Selecciona un curso --</option>
+          <optgroup label="Más populares">
+            <option value="analisis-datos-google">Análisis de datos de Google</option>
+            <option value="fundamentos-datos">Fundamentos: Datos, datos, en todas partes</option>
+            <option value="python-para-todos">Python para todos</option>
+          </optgroup>
+          <optgroup label="Destacado semanal">
+            <option value="desarrollo-ia-huggingface">Desarrollo de IA generativa con Hugging Face</option>
+            <option value="ibm-fpa">IBM Planificación y Análisis Financiero (FP&A)</option>
+            <option value="ia-de-google">IA de Google</option>
+          </optgroup>
+          <optgroup label="Conocimientos de IA demandados">
+            <option value="ia-marketing-crecimiento">IA generativa para el marketing de crecimiento</option>
+            <option value="lider-estrategico-ia">Líder estratégico de IA generativa</option>
+            <option value="agentes-ia-flujos">Creación de agentes de IA y flujos de trabajo</option>
+          </optgroup>
+        </select>
+      </label>
+      <label>Nivel *<select required><option value="">-- Seleccionar --</option><option>Preparatoria</option><option>Licenciatura</option></select></label>
+      <div><b>Modalidad *</b><div class="opts"><label><input type="radio" name="m" checked> Online</label><label><input type="radio" name="m"> En vivo</label></div></div>
+      <div><b>Pago *</b><div class="opts"><label><input type="radio" name="p" checked> Tarjeta</label><label><input type="radio" name="p"> Beca 100%</label></div></div>
+      <label>Motivo de ingreso<textarea rows="2"></textarea></label>
+      <div class="opts"><label><input type="checkbox" required> Acepto términos y condiciones.</label></div>
+      <button type="submit" style="background:#000;color:#fff;padding:8px;border:none;border-radius:4px;cursor:pointer">Inscribirme ahora &rarr;</button>
+    </form>
+  </section>
+  <footer><p>Marrufo Alvarado Oyuki Alejandra | Control: a.24308051280591 | 5to I | Programación</p></footer>
+</body>
+</html>
